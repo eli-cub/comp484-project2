@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -20,12 +19,14 @@
     <main>
       <section class="pet-image-container">
          <!-- Replace pet image with your own pet image -->
-        <img class="pet-image" src="https://cdn.glitch.com/3aa98e05-3216-497c-a251-210ae4713a83%2Fhound.jpg?1541715339220">
+        <img id="pet-img" class="pet-image" src="https://img.pokemondb.net/artwork/large/vulpix.jpg">
       </section>
       <section class="dashboard">
         <div>Name: <strong><span class="name"></span></strong></div>
         <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
         <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+        <div>Energy: <strong><span class="energy"></span> energy (per min)</strong></div>
+        <div id="pet-comment" class="pet-comment" style="display:none;"></div>
         <div class="button-container">
           <button class="treat-button">
             Treat
@@ -36,7 +37,11 @@
           <button class="exercise-button">
             Exercise
           </button>
+          <button class="sleep-button">
+            Sleep
+          </button>
         </div>
+       
       </section>
     </main>
 
@@ -44,5 +49,6 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
+            <script src="script.js"></script>
   </body>
 </html>
